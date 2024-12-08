@@ -1,0 +1,180 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fc;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 32px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Container Styling */
+.app-container {
+  width: 100%;
+  max-width: 900px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.app-container:hover {
+  transform: scale(1.03);
+}
+
+/* Form Elements */
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+label {
+  font-size: 18px;
+  color: #666;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+select {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 150px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+select:focus {
+  outline: none;
+  border-color: #2575fc;
+  background-color: #e9f7fe;
+  box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+}
+
+/* Buttons */
+button {
+  padding: 12px 25px;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* Output Messages */
+.output-container {
+  margin-top: 40px;
+}
+
+.result-message, .error-message {
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.result-message {
+  background-color: #e1f5e5;
+  border: 1px solid #4caf50;
+  color: #388e3c;
+}
+
+.error-message {
+  background-color: #ffe6e6;
+  border: 1px solid #f44336;
+  color: #d32f2f;
+}
+
+/* Animation for Result and Error */
+.result-message {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.error-message {
+  animation: fadeIn 0.5s ease-out;
+}
+/* File Upload Section Styling */
+.form-group input[type="file"] {
+  padding: 10px;
+  font-size: 16px;
+  color: #666;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.form-group input[type="file"]:hover,
+.form-group input[type="file"]:focus {
+  outline: none;
+  border-color: #2575fc;
+  background-color: #e9f7fe;
+  box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+}
+
+/* Upload Button Styling */
+button[type="button"] {
+  padding: 12px 25px;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button[type="button"]:hover {
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+  transform: translateY(-3px);
+}
+
+button[type="button"]:active {
+  transform: translateY(1px);
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
